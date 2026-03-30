@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "GPTfaster",
+  "version": "1.0.0",
+  "description": "Prevents lag in long ChatGPT conversations by virtualizing off-screen messages to save memory.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
